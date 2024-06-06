@@ -201,3 +201,21 @@ CREATE TABLE `alumno_asignatura` (
   CONSTRAINT `alumno_asignatura_ibfk_1` FOREIGN KEY (`id_alumno`) REFERENCES `alumno` (`id`),
   CONSTRAINT `alumno_asignatura_ibfk_2` FOREIGN KEY (`id_asignatura`) REFERENCES `asignatura` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT
 ) 
+
+
+#PROJECT EXECUTION
+
+1- Open a new CMD window located on the Server folder and execute the following command:
+
+	npm run build	
+ 
+2- Open a second CMD window located on the Server folder and execute the following command:
+
+ 	npm run dev
+	
+3- Start the database
+
+4- Open a CMD window located on the Client folder and execute the following command:
+	
+ 	ng serve
+
